@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Protocol</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/jpg" href="user.svg"/>
+</head>
+
+<body>
+
+    <div class="request-container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Read patient</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="add-patient.html">Add patient</a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- read patient -->
+    <div class="request-container" id="readPatient">
+        <form id="readPatientForm" method="POST" action="/read">
+            <h3>User information</h3>
+            <br>
+            <div class="mb-3">
+                <label for="username_r" class="form-label" for="username">User name</label>
+                <input type="text" class="form-control" id="username_r" name="username">
+            </div>
+
+            <div class="mb-3">
+                <label for="userpassword_r" class="form-label" for="password">Password</label>
+                <input type="password" class="form-control" id="userpassword_r" name="password">
+            </div>
+
+
+            <br>
+            <h3>Patient information</h3>
+            <br>
+
+            <div class="mb-3">
+                <label for="patientid_r" class="form-label" for="patientId">ID</label>
+                <input type="number" class="form-control" id="patientid_r" name="patientId">
+            </div>
+
+            <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

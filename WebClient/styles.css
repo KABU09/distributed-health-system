@@ -1,0 +1,9 @@
+.request-container{
+    width: 50%;
+    margin: 5% auto;
+    background-color: #FFFFFF;
+}
+
+body {
+    color: rgba(0, 0, 0, 0.8);
+}
